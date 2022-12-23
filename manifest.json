@@ -1,0 +1,19 @@
+{
+    "name": "ezPal",
+    "version": "1.0.0",
+    "description": "to make ePal ez",
+    "manifest_version": 3,
+    "author": "daizy",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "ezPal Menu"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.epal.gg/*"],
+            "js": ["script.js"],
+            "css": ["style.css"],
+            "run_at": "document_end"
+        }
+    ]
+}
