@@ -7,13 +7,13 @@
   <script src="script.js"></script>
 </head>
 
-<body>
+<body width="100px">
   <div class="tab">
-    <button class="tablinks" id='Home btn'><img src="icons/epal logo.png" style="padding: 5px; width: 65%; border-radius: 50%"></button>
-    <button class="tablinks" id='Reply btn'><img src="icons/chat-bubbles.png" style="padding: 5px; width: 65%"></button>
-    <button class="tablinks" id='Collect btn'><img src="/icons/all-evs.png" style="padding: 5px; width: 68.5%"></button>
-    <button class="tablinks" id='Stats btn'><img src="icons/orders.png" style="padding: 5px; width: 65%">"</button>
-    <button class="tablinks" onclick="openCity(event, 'Settings')"><img src="icons/settings.png" style="padding: 5px; width: 65%"></button>
+    <button class="tablinks" id='Home btn'><img id='Home btn' src="icons/epal logo.png" style="padding: 5px; width: 65%; border-radius: 50%"></button>
+    <button class="tablinks" id='Reply btn'><img id='Reply btn' src="icons/chat-bubbles.png" style="padding: 5px; width: 65%"></button>
+    <button class="tablinks" id='Collect btn'><img id='Collect btn' src="/icons/all-evs.png" style="padding: 5px; width: 68.5%"></button>
+    <button class="tablinks" id='Stats btn'><img id='Stats btn' src="icons/orders.png" style="padding: 5px; width: 65%">"</button>
+    <button class="tablinks" id='Settings btn'><img id='Settings btn' src="icons/settings.png" style="padding: 5px; width: 65%"></button>
   </div>
 
   <div id="Home" class="tabcontent">
@@ -27,7 +27,7 @@
     </div>
   </div>
 
-  <div id="Replies" class="tabcontent">
+  <div id="Reply" class="tabcontent">
     <h3 class="h3reply">Replies
     <span class="search-container">
       <form action="/action_page.php">
@@ -173,23 +173,6 @@
       <span class="slider round"></span>
     </label>
   </div>
-
-
-  <!--<script>
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-  </script>-->
 
 </body>
 
