@@ -4,14 +4,15 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
   <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Home')"><img src="icons/epal logo.png" style="padding: 5px; width: 65%; border-radius: 50%"></button>
-    <button class="tablinks" onclick="openCity(event, 'Replies')"><img src="icons/chat-bubbles.png" style="padding: 5px; width: 65%"></button>
-    <button class="tablinks" onclick="openCity(event, 'Collect')"><img src="/icons/all-evs.png" style="padding: 5px; width: 68.5%"></button>
-    <button class="tablinks" onclick="openCity(event, 'Stats')"><img src="icons/orders.png" style="padding: 5px; width: 65%">"</button>
+    <button class="tablinks" id='Home btn'><img src="icons/epal logo.png" style="padding: 5px; width: 65%; border-radius: 50%"></button>
+    <button class="tablinks" id='Reply btn'><img src="icons/chat-bubbles.png" style="padding: 5px; width: 65%"></button>
+    <button class="tablinks" id='Collect btn'><img src="/icons/all-evs.png" style="padding: 5px; width: 68.5%"></button>
+    <button class="tablinks" id='Stats btn'><img src="icons/orders.png" style="padding: 5px; width: 65%">"</button>
     <button class="tablinks" onclick="openCity(event, 'Settings')"><img src="icons/settings.png" style="padding: 5px; width: 65%"></button>
   </div>
 
@@ -174,7 +175,7 @@
   </div>
 
 
-  <script>
+  <!--<script>
     function openCity(evt, cityName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
@@ -188,7 +189,7 @@
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
     }
-  </script>
+  </script>-->
 
 </body>
 
